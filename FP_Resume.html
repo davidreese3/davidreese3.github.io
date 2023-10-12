@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width">
+		
+	<title>Resume</title>
+	<link rel="icon" href="icon.png">
+	<link href="styles.css" rel="stylesheet" />
+	<script src="functions.js" type="text/JavaScript"></script>
+	<script src="data.js" type="text/JavaScript"></script>
+	<script src="functions.js" type="text/JavaScript"></script>
+	<script src="imageRotation.js" type="text/JavaScript"></script>
+	<link href="imageRotation.css" rel="stylesheet"/>
+	<script src="header.js" type="text/JavaScript"></script>
+</head>
+<body>
+	<script>
+		printHeader();
+	</script>
+
+	<div id="pageBody">
+		<div class="titleDiv">
+			<h2>Resume
+				<a href="Resume.docx" download><button class="pageButton"><img src="word.png" width="20px"> Word download</button></a>   
+				<a href="Resume.pdf" download><button class="pageButton"><img src="pdf.png" width="20px"> PDF download</button></a>
+			</h2>
+		</div>
+		<h3><u>Education</u></h3>
+		<table id="resumeTable">
+			<tr>
+				<td id="leftSide"><strong>The University of Scranton</strong></td>
+				<td id="rightSide">Scranton, PA</td>
+			</tr>
+			<tr>
+				<td id="leftSide"><em>Master of Science in Software Engineering</em></td>
+				<td id="rightSide"><em>Anticipated Graduation May 2025</em></td>
+			</tr>
+			<tr>
+				<td id="leftSide"><strong>The University of Scranton</strong></td>
+				<td id="rightSide">Scranton, PA</td>
+			</tr>
+			<tr>
+				<td id="leftSide"><em>Bachelor of Science in Computer Science (ABET accreditation)</em></td>
+				<td id="rightSide"><em>Anticipated Graduation May 2024</em></td>
+			</tr>
+		</table>
+		<ul>
+			<li>Overall GPA: 3.64/4.00</li>
+			<li>Upsilon Pi Epsilon Honors Society, Dean's List </li>
+		</ul>
+
+		<h3><u>Skills and Tools</u></h3>
+		<table id="skills">
+			<td>
+				<ul>
+					<li><strong>Program Languages:</strong> Java, C, Python</li>
+					<li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+					<li><strong>Database:</strong> PostgreSQL, Oracle SQL</li>
+					<li><strong>Tools:</strong> Git, GitLab, Eclipse, Visual Studio Code, PuTTY, FileZilla </li>
+					<li><strong>Other:</strong> Visual Basic (VBA), Microsoft Office, Google Workspace</li>
+				</ul>
+			</td>
+			<td class="progressBar">
+			<h4>Programing Languages</h4>
+			Java:
+			<progress class="progGreat" value="90" max="100"></progress> <br>
+			C:
+			<progress class="progGood" value="70" max="100"></progress> <br>
+			Python:
+			<progress class="progGood" value="70" max="100"></progress> <br>
+			VBA:
+			<progress class="progGreat" value="90" max="100"></progress> <br>
+			</td>
+			<td class="progressBar">
+			<h4>Web Languages</h4>
+			HTML:
+			<progress class="progGreat" value="80" max="100"></progress> <br>
+			CSS:
+			<progress class="progGood" value="70" max="100"></progress> <br>
+			JavaScript:
+			<progress class="progGreat" value="80" max="100"></progress> <br>
+			</td>
+			<td class="progressBar">
+			<h4>Database Languages</h4>
+			PostgreSQL:
+			<progress class="progGood" value="70" max="100"></progress> <br>
+			Oracle SQL:
+			<progress class="progGood" value="70" max="100"></progress> <br>
+			</td>
+	  </table>
+
+		<h3><u>Projects</u></h3>
+		<ul>
+			<li>CLI Java Card Game</li>
+			<li>Webpage Resume</li>
+			<li>CLI Group Chat with Client-Server Communication</li>
+			<li>Java-PostgreSQL Database Communication Application</li>
+			<li>Nand2Tetris Java Assembler for Assembly Language to Binary</li>
+			<li>Multi-Threaded Job Scheduler for Unix</li>
+		</ul>
+
+		<h3><u>Work Experience</u></h3>
+		<script>
+			(function () {
+			  for(j=0;j<4;j++){
+				jobs[j].outputJob();
+			  }
+			})();
+		  </script>
+		  <table>
+			<!-- Slideshow container -->
+			<td id="slideshow">
+				<div class="slideshow-container fade">
+
+					<!-- Full images with numbers and message Info -->
+					<div class="Containers">
+					<img src="job1.jpg" style="width:100%">
+					<div class="Info">Orientation Team Leader</div>
+					</div>
+				
+					<div class="Containers">
+					<img src="job2.jpg" style="width:100%">
+					<div class="Info">Chief of Staff</div>
+					</div>
+				
+					<div class="Containers">
+					<img src="job3.jpg" style="width:100%">
+					<div class="Info">Orientation Team Leader</div>
+					</div>
+					<!-- Back and forward buttons -->
+					<a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="forward" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				
+				<!-- The circles/dots -->
+				<div style="text-align:center">
+					<span class="dots" onclick="currentSlide(1)"></span>
+					<span class="dots" onclick="currentSlide(2)"></span>
+					<span class="dots" onclick="currentSlide(3)"></span>
+				</div> 
+			</td>
+			<td id="links">
+				<h3><u>Related Links:</u></h3>
+				<h4>Education:</h4>
+				<a href="https://www.scranton.edu/">The University of Scranton</a> <br>
+				<a href="https://www.cs.scranton.edu/">UofS Computer Science Department</a>
+				<h4>Employers:</h4>
+				<a href="https://www.cs.scranton.edu/">UofS Computer Science Department</a> <br>
+				<a href="https://sig.com/">Sig Susguehanna</a> <br>
+				<a href="https://www.scranton.edu/studentlife/studentaffairs/student-activities/index.shtml">UofS Center for Student Engagement</a> <br>
+				<a href="https://www.scranton.edu/academics/ctle/index.shtml">UofS OSSS (Formerly Center for Teaching and Learning Excellence)</a> <br>
+				<a href="https://www.scranton.edu/studentlife/studentaffairs/student-activities/student-government/sg-index.shtml">UofS Student Government</a> <br>
+			</td>
+		  </table>
+	</div>
+</body>
+</html>
