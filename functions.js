@@ -5,7 +5,7 @@ function Job(company, title, location, time, description) {
     this.title = title,
     this.location = location,
     this.time = time,
-    this.description = description //array of each bullet
+    this.description = description 
 }
 
 Job.prototype.outputJob = function () {
@@ -33,41 +33,23 @@ Job.prototype.outputJob = function () {
     document.write("<br>")
 }
 
-function Class(title, description, lang) {
+function Class(title, description) {
     this.title = title,
     this.description = description 
-    this.lang = lang;
 }
 
-Class.prototype.outputClass = function (count,length) {
-    document.write("<details>")
-    document.write("<summary><strong>"+this.title+"</strong></summary>")
-    document.write("<ul><li>"+this.description+"</li></ul>");
-    if(this.lang!=null){
-      if((this.lang).includes(",")){
-        document.write("<ul><li>Skills: "+this.lang+"</li></ul>");
+Class.prototype.outputClass = function () {
+  document.write("<div class='class-item'>");
+  document.write("<div class='class-title'><h5>" + this.title + "</h4></div>");
+  //document.write("<div class='class-description'><ul>" + this.description + "</ul></div>");
+  document.write("</div>");
+};
 
-      }
-      else{
-        document.write("<ul><li>Skill: "+this.lang+"</li></ul>");
-      }
-    }
-    if(count!=length-1){
-        document.write("<br>");
-    }
-    document.write("</details>")
-}
-
-function printClass(classes,year){
-    document.write("<details><summary class=\"year\">"+year+" Year</summary>")
-    document.write("<ul class=\"yearContent\">");
-    (function () {
-        for(j=0;j<classes.length;j++){
-            classes[j].outputClass(j,classes.length);
-        }
-    })();
-    document.write("</ul>")
-    document.write("</details>")
+function printClass(classes, class_name) {
+  document.write("<h2>" + class_name + " Year</h2>");
+  for (let i = 0; i < classes.length; i++) {
+    classes[i].outputClass();
+  }
 }
 
 function closeAllSummaries() {

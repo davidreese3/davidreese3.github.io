@@ -18,21 +18,18 @@
 
 	<div id="pageBody">
 		<div class="titleDiv">
-			<h2>Academic History
-				<button id="close-all-button" class="pageButton">Close All</button>
-			</h2>
+			<h2>Academic History</h2>
 		</div>
 		<p>
-			Below is a list of all the Computer Science/Software Engineering classes I have taken at my University organized by year. 
-			To read more, simply click on an arrow and see the classes.
+			Below is a list of all the Computer Science/Software Engineering classes I have taken at my University.
 		</p>
-
+		<br>
 		<script>
 			printClass(freshmanClasses, "First");
 			printClass(sophomoreClasses, "Sophomore");
 			printClass(juniorClasses, "Junior");
 			printClass(seniorClasses, "Senior");
-    		document.getElementById("close-all-button").addEventListener("click", closeAllSummaries);
+			printClass(gradClasses, "Grad")
 		</script>
 	</div>
 </body>
