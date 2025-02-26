@@ -15,3 +15,7 @@ body {
     width: 80%;
     max-width: 95%;
 }
+
+img {
+    width: 100%;
+}
