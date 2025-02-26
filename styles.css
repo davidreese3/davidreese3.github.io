@@ -16,6 +16,15 @@ body {
     max-width: 95%;
 }
 
-img {
+.gitHub {
     width: 100%;
+}
+
+.headshot {
+    border-radius: 50%;
+    height: 100%;
+    width: 100px;
+    border-color: #faf3e0;
+    border-style: solid; 
+    border-width: 7px;   
 }
