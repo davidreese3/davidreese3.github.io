@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - David Reese</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="randomColor.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -45,7 +46,7 @@
         </ul>
         
         <h2>Projects</h2>
-        <p>Click on the name below to see the github repository</p>
+        <p>Click on the name below to see the github repository.</p>
         <ul>
             <li><strong><a href="https://github.com/davidreese3/RecipEase" target="_blank">Recipe Sharing Platform "RecipEase"</a></strong> - A Spring Boot social media platform for sharing and discovering recipes.</li>
             <li><strong><a href="https://github.com/davidreese3/davidreese3.github.io" target="_blank">Personal Website</a></strong> - A simple, self-hosted webpage providing an introduction to my background, skills, and projects.</li>
@@ -61,9 +62,10 @@
             GitHub: <a href="https://github.com/davidreese3" target="_blank">github.com/davidreese3</a>
         </p>
 
-        <br>
-        <img src="http://ghchart.rshah.org/davidreese3" alt="davidreese3's Github chart" class="gitHub"/>
-        <p>GitHub chart generated using <a href="https://github.com/akerl/githubchart" target="_blank">githubchart</a>, open-source under the MIT License.</p>
+        <h2>GitHub Contribution Graph</h2>
+        <p>Reload the page to see the graph in a new color. The current color is <span id="selectedColor"></span></p>
+        <div id="graphContainer"></div>
+        <p>GitHub Graph generated using <a href="https://github.com/akerl/githubchart" target="_blank">githubchart</a>, open-source under the MIT License.</p>
     </div>
 </body>
 </html>
