@@ -16,7 +16,7 @@ function generateGitHubGraph(){
     else{
         selectedColor = "#" + selectedColor.substring(0,6);
     }
-    document.getElementById('selectedColor').textContent = selectedColor;
+    document.getElementById('selectedColor').textContent = selectedColor + ".";
 }
 
 document.addEventListener('DOMContentLoaded', function () {
