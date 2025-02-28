@@ -30,3 +30,16 @@ body {
     border-width: 7px;   
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
+
+a {
+    text-decoration: none;
+    color: #4A90E2;
+}
+
+a:visited{
+    color: #8f74aa;
+}
+
+a:hover{
+    color: #4A90E2;
+}
