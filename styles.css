@@ -57,3 +57,8 @@ a:hover{
     object-fit: cover; 
     border-radius: 8px; 
 }
+
+#clarifier {
+    font-size: 12px;
+    font-weight: 100;
+}
